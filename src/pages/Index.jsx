@@ -16,7 +16,7 @@ const Index = () => {
 
   return (
     <Container maxW="container.xl" p={4}>
-      <Flex as="nav" bg="gray.800" color="white" p={4} mb={6} justifyContent="space-between">
+      <Flex as="nav" bg="blue.900" color="white" p={4} mb={6} justifyContent="space-between">
         <Heading size="lg">Financial Times</Heading>
         <HStack spacing={8}>
           <Link href="#">Home</Link>
@@ -29,7 +29,9 @@ const Index = () => {
 
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Box as="main" colSpan={{ base: 1, md: 2 }}>
-          <Heading size="md" mb={4}>Latest News</Heading>
+          <Heading size="md" mb={4}>
+            Latest News
+          </Heading>
           <VStack spacing={4} align="stretch">
             <Box borderWidth="1px" borderRadius="lg" overflow="hidden">
               <Image src="https://via.placeholder.com/800x400" alt="News 1" />
@@ -56,7 +58,9 @@ const Index = () => {
         </Box>
 
         <Box as="aside" colSpan={1}>
-          <Heading size="md" mb={4}>Market Data</Heading>
+          <Heading size="md" mb={4}>
+            Market Data
+          </Heading>
           <VStack spacing={4} align="stretch">
             {financialData.map((item, index) => (
               <Box key={index} borderWidth="1px" borderRadius="lg" p={4}>
